@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Gear (SNES) - Parte 1: USA</title>
+    <style>
+        /* Estilos para visualizar o box model */
+        .box-model-element {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fafafa;
+            /* Sombra suave em todos os boxes */
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        /* Efeito hover nos boxes */
+        .box-model-element:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        /* Estilos específicos para cada seção com box model */
+        .video-container,
+        .audio-section,
+        .comments-section,
+        .related-videos,
+        .login-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+
+        /* Estilo básico para layout */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f8f7fa;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #c00;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .search-box {
+            display: flex;
+            gap: 5px;
+        }
+
+        .search-box input,
+        .search-box button {
+            transition: box-shadow 0.2s ease;
+        }
+
+        .search-box input:focus,
+        .search-box button:hover {
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Estilização de imagens */
+        img {
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        /* Botão de login */
+        input[type="submit"] {
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(140, 7, 7);
+            transform: translateY(-1px);
+        }
+
+        /* Links com hover */
+        a {
+            color: #c00;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #800;
+            text-decoration: underline;
+        }
+
+        /* Grid responsivo */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        .main-content {
+            grid-column: 1;
+        }
+
+        .sidebar {
+            grid-column: 2;
+        }
+
+        @media (max-width: 768px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                grid-column: 1;
+            }
+        }
+    </style>
+</head>
+ 
+<body>
+    <!-- Cabeçalho com box model -->
+    <header class="box-model-element">
+        <h2>YouTube Clone</h2>
+        <div class="logo">
+            <!-- Corrigido: removido espaço extra na URL -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" 
+                 alt="Logo do YouTube" width="150" 
+                 style="background-color: whitesmoke; padding: 5px;">
+            
+            <div class="search-box">
+                <input type="text" placeholder="Pesquisar..." 
+                       style="padding: 5px; border: 1px solid #ccc; border-radius: 3px;">
+                <button type="submit" 
+                        style="background-color: rgb(218, 110, 110); color: white; border: none; padding: 5px 10px; border-radius: 3px;">
+                    Buscar
+                </button>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Explorar</a></li>
+                    <li><a href="#">Inscrições</a></li>
+                    <li><a href="#">Biblioteca</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <div class="content">
+        <div class="main-grid">
+            <div class="main-content">
+                <!-- Seção de vídeo com box model -->
+                <div id="video-section" class="video-container box-model-element">
+                    <!-- Corrigido: removido espaço extra na URL do poster -->
+                    <video controls width="100%" height="auto" 
+                           poster="https://i.ytimg.com/vi/QliDNIc6Stw/maxresdefault.jpg">
+                        <source src="https://www.youtube.com/watch?v=QliDNIc6Stw" type="video/mp4">
+                        Seu navegador não suporta a tag de vídeo.
+                    </video>
+                    <h2>🎮 Top Gear - Part 1: USA</h2>
+                    <p>Publicado por <strong>GamingBoy</strong> - 3,2 mi de visualizações • há 14 anos</p>
+                </div>
+
+                <!-- Descrição -->
+                <section class="box-model-element">
+                    <h3>Descrição do vídeo</h3>
+                    <p>
+                        Top Gear é um clássico subestimado dos anos 90. É rápido, divertido e com trilha sonora marcante. 
+                        Neste vídeo jogamos o primeiro país do game: os EUA, passando por Las Vegas, Los Angeles, Nova York e São Francisco.
+                    </p>
+                    <p><a href="#">Mais sobre este jogo</a></p>
+                </section>
+
+                <!-- Áudio com box model -->
+                <div id="audio" class="audio-section box-model-element">
+                    <h2>Música tema do Top Gear</h2> 
+                    <!-- Corrigido: removido espaços extras na URL -->
+                    <audio controls>
+                        <source src="https://downloads.khinsider.com/game-soundtracks/album/top-gear-snes/02%20Las%20Vegas.mp3" type="audio/mpeg">
+                        Seu navegador não suporta a tag de áudio.
+                    </audio>
+                </div>
+
+                <!-- Comentários -->
+                <section class="comments-section box-model-element">
+                    <h3>Comentários</h3>
+                    <ul>
+                        <li><strong>Usuário1:</strong> "Saudades da infância, 1993/94. Nostalgia pura!"</li>
+                        <li><strong>Usuário2:</strong> "Esse jogo marcou minha infância. A trilha sonora é épica!"</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="sidebar">
+                <!-- Vídeos relacionados -->
+                <section class="related-videos box-model-element">
+                    <h3>📺 Vídeos relacionados</h3>
+                    <ol>
+                        <li><a href="#">Top Gear - Part 2: South America</a></li>
+                        <li><a href="#">Street Fighter 2 Champion Edition (Arcade)</a></li>
+                        <li><a href="#">Jogando futebol brasileiro 96</a></li>
+                    </ol>
+                </section>
+
+                <!-- Formulário de Login -->
+                <section class="login-section box-model-element">
+                    <h3>🔒 Login</h3>
+                    <form action="#" method="post">
+                        <label for="username">Usuário:</label>
+                        <input type="text" id="username" name="username" required><br><br>
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" required><br><br>
+                        <input type="submit" value="Entrar" 
+                               style="background-color: rgb(168, 9, 9); color: white; border: none; padding: 10px 20px; cursor: pointer;">
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
