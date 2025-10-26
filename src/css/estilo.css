@@ -1,1 +1,105 @@
+/* estilo.css */
 
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho Acadêmico */
+.cabecalho-academico {
+    background-color: #ffffff;
+    border-bottom: 3px solid #d32f2f;
+    padding: 20px 30px;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho-academico h1 {
+    font-size: 24px;
+    color: #1976d2; /* Azul acadêmico */
+    margin-bottom: 12px;
+}
+
+.cabecalho-academico p {
+    font-size: 16px;
+    margin: 6px 0;
+}
+
+/* Conteúdo principal */
+.conteudo-principal {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.conteudo-principal h2 {
+    color: #d32f2f; /* Vermelho do YouTube */
+    margin: 30px 0 25px;
+    font-size: 28px;
+}
+
+/* Botões */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 14px 28px;
+    font-size: 18px;
+    color: white;
+    background-color: #d32f2f;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #b71c1c;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .cabecalho-academico {
+        padding: 15px;
+    }
+
+    .cabecalho-academico h1 {
+        font-size: 20px;
+    }
+
+    .cabecalho-academico p {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
